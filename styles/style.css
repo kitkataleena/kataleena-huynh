@@ -13,19 +13,6 @@
         "wdth" 100;
 }
 
-/* header {
-    background-color: rgba(221, 209, 209, 0.7);
-    color:white;
-    padding: 1rem 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-radius: 8px;
-} */
-
 .compact-header {
     font-family: "Merriweather", serif;
     flex-direction: row;
@@ -38,7 +25,7 @@
     color: white;
     padding: 0rem 1.5rem 0.3rem;
     border-radius: 12px;
-    margin: 1rem auto;
+    margin: 1rem;
 }
 
 .header-pages {
@@ -98,16 +85,16 @@ html {
 }
 
 .about-me-points {
-    text-align: left !important;
-    color: orange !important;
+    text-align: left;
+    color: rgb(0, 0, 0);
 }
 
-/* p,
+p,
 li,
 figcaption,
 h2 {
     font-family: 'Gidole', sans-serif;
-} */
+}
 
 h1,
 h2,
@@ -182,11 +169,11 @@ img.rounded {
     height: auto;
 }
 
-/* .media-page {
+.media-page {
     text-align: center;
-} */
+}
 
-/* Carousel */
+/*Carousel*/
 .carousel {
     position: relative;
     max-width: 60%;
