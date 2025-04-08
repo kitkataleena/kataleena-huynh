@@ -53,9 +53,11 @@ header h1 {
     padding-right: 0.5rem;
 }
 
-.first-name, .last-name {
+.first-name,
+.last-name {
     font-weight: 700;
 }
+
 .last-name {
     transition: opacity 0.3s ease;
 }
@@ -85,6 +87,7 @@ header h1 {
         gap: 1rem;
         align-items: center;
     }
+
     .last-name {
         display: none;
     }
@@ -94,14 +97,24 @@ html {
     background-color: #C5D5EA;
 }
 
-p,
+.about-me-points {
+    text-align: left !important;
+    color: orange !important;
+}
+
+/* p,
 li,
 figcaption,
 h2 {
     font-family: 'Gidole', sans-serif;
-}
+} */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Merriweather', serif;
 }
 
@@ -135,14 +148,18 @@ img.rounded {
 }
 
 .row {
-    display: flex; /* For row-based layout */
-    flex-wrap: wrap; /* Allow wrapping of items */
+    display: flex;
+    /* For row-based layout */
+    flex-wrap: wrap;
+    /* Allow wrapping of items */
     gap: 20px;
 }
 
 .col {
-    flex: 1; /* Allow columns to grow equally */
-    min-width: 250px; /* Ensure columns don't get too narrow */
+    flex: 1;
+    /* Allow columns to grow equally */
+    min-width: 250px;
+    /* Ensure columns don't get too narrow */
 }
 
 #about-me-images {
@@ -165,10 +182,11 @@ img.rounded {
     height: auto;
 }
 
-.media-page h2, p {
+/* .media-page {
     text-align: center;
-}
+} */
 
+/* Carousel */
 .carousel {
     position: relative;
     max-width: 60%;
