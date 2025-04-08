@@ -64,9 +64,6 @@ header h1 {
     transition: color 0.3s ease;
 }
 
-.nav-links li a:hover {
-    color: #ffc107;
-}
 
 @media (max-width: 600px) {
     .nav-links {
