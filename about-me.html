@@ -11,56 +11,59 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Gidole&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css"  />
+    <link rel="stylesheet" href="styles/style.css" />
 </head>
 
+
+<header class="compact-header">
+    <h1>
+        <a href="index.html">
+            <span class="first-name">Kataleena</span>
+            <span class="last-name">Huynh</span>
+        </a>
+    </h1>
+    <nav class="header-pages">
+        <a href="about-me.html">About</a>
+        <a href="myprojects.html">Projects</a>
+        <a href="media.html">Media</a>
+        <a href="contactme.html">Contact</a>
+    </nav>
+</header>
+<header class="page-title">
+    <h2>About Me</h2>
+</header>
+
 <body>
-    <header class="compact-header">
-        <h1>
-            <a href="index.html">
-                <span class="first-name">Kataleena</span>
-                <span class="last-name">Huynh</span>
-            </a>
-        </h1>
-        <nav class="header-pages">
-            <a href="about-me.html">About</a>
-            <a href="myprojects.html">Projects</a>
-            <a href="media.html">Media</a>
-            <a href="contactme.html">Contact</a>
-        </nav>
-    </header>
-    <header>
-        <h2>About Me</h2>
-    </header>
     <main>
-        <section class="about-me-points">
-            <p>hello! i'm kataleena, and i’m a 4th year biochemistry undergraduate at the university of illinois,
-                urbana-champaign. scroll to learn more about me!</p>
-            <p>currently learning:</p>
-            <ul>
-                <li>python, R, cli/bash for bioinformatic applications</li>
-                <li>html, css, js for my personal website (i think its working ?)</li>
-                <li>crochet !! (i want to make pretty crochet flowers)</li>
-            </ul>
-            <p>uiuc courses enrolled in:</p>
-            <ul>
-                <li><a href="https://app.mcb.illinois.edu/courses/detail/89">bioc 446: physical biochemistry</a></li>
-                <li><a href="https://app.mcb.illinois.edu/courses/detail/197">mcb 406: genes and regulation</a></li>
-            </ul>
-            <p>skilled at:</p>
-            <ul>
-                <li>vlogging on my dji osmo pocket 3</li>
-                <li>video editing in final cut pro</li>
-                <li>designing flyers on canva</li>
-                <li>making custom clothing and stickers with my cricut</li>
-            </ul>
-        </section>
-        <section id="about-me-images">
-            <figure>
+        <div class="about-me-container">
+            <div class="about-me-text">
+                <p>hello! i'm kataleena, and i’m a 4th year biochemistry undergraduate at the university of illinois,
+                    urbana-champaign. scroll to learn more about me!</p>
+                <p>currently learning:</p>
+                <ul>
+                    <li>python, R, cli/bash for bioinformatic applications</li>
+                    <li>html, css, js for my personal website (i think its working ?)</li>
+                    <li>crochet !! (i want to make pretty crochet flowers)</li>
+                </ul>
+                <p>uiuc courses enrolled in:</p>
+                <ul>
+                    <li><a href="https://app.mcb.illinois.edu/courses/detail/89">bioc 446: physical biochemistry</a>
+                    </li>
+                    <li><a href="https://app.mcb.illinois.edu/courses/detail/197">mcb 406: genes and regulation</a></li>
+                </ul>
+                <p>skilled at:</p>
+                <ul>
+                    <li>vlogging on my dji osmo pocket 3</li>
+                    <li>video editing in final cut pro</li>
+                    <li>designing flyers on canva</li>
+                    <li>making custom clothing and stickers with my cricut</li>
+                </ul>
+            </div>
+            <figure id="about-me-image">
                 <img src="images/kataleena-sf-chinatown.png" alt="Kataleena in SF Chinatown">
                 <!--<figcaption>Exploring SF Chinatown</figcaption>-->
             </figure>
-        </section>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 Kataleena Huynh</p>

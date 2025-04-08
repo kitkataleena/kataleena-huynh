@@ -40,6 +40,9 @@ header h1 {
     padding-right: 0.5rem;
 }
 
+.page-title h2 {
+    padding-left: 5%;
+}
 .first-name,
 .last-name {
     font-weight: 700;
@@ -77,13 +80,44 @@ header h1 {
     }
 }
 
+@media (max-width: 950px) {
+    .about-me-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #about-me-image {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
 html {
     background-color: #C5D5EA;
 }
 
-.about-me-points {
+.about-me-container {
+    font-family: "Gidole", serif;
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    padding-top: 0;
+    gap: 10px;
     text-align: left;
-    color: rgb(0, 0, 0);
+}
+
+.about-me-text {
+    flex: 1;
+}
+
+#about-me-image {
+    width: 80%;
+    max-width: 400px;
+    min-width: 250px;
+    height: auto;
+    overflow: hidden;
+    /* box-shadow: 0 12px 8px rgba(0, 0, 0, 0.3); */
 }
 
 p,
@@ -146,20 +180,6 @@ img.rounded {
     /* Ensure columns don't get too narrow */
 }
 
-#about-me-images {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    overflow: hidden;
-}
-
-#about-me-images img {
-    width: 80%;
-    height: auto;
-    border-radius: 8px;
-}
-
 .yt iframe {
     position: relative;
     width: auto;
@@ -173,10 +193,10 @@ img.rounded {
 /*Carousel*/
 .carousel {
     position: relative;
-    max-width: 60%;
+    max-width: 400px;
     margin: auto;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-image {
@@ -188,17 +208,21 @@ img.rounded {
     display: block;
 }
 
-.prev,
-.next {
+.prev, .next {
     cursor: pointer;
     position: absolute;
+    width: 9%;
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
-    background: rgba(0, 0, 0, 0.3);
-    color: white;
+    /* background: rgba(0, 0, 0, 0.3); */
+    color: rgb(255, 255, 255);
     border: none;
     padding: 0.5rem;
+    backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .prev {
