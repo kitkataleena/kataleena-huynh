@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Kataleena Huynh - Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gidole&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+<header class="compact-header">
+    <h1>
+        <a href="index.html">
+            <span class="first-name">Kataleena</span>
+            <span class="last-name">Huynh</span>
+        </a>
+    </h1>
+    <nav class="header-pages">
+        <a href="about-me.html">About</a>
+        <a href="myprojects.html">Projects</a>
+        <a href="media.html">Media</a>
+        <a href="contact-me.html">Contact</a>
+    </nav>
+</header>
+
+<body>
+    <div class="media-page">
+        <h2>Media</h2>
+        <p>Check out some of the media that I have created! </p>
+    </div>
+    <!--<section id="yt-videos">
+            <div class="yt">
+                <iframe width="560" height="315" src="https://youtu.be/embed/fhEtwKwN4XU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>-->
+    <section id="carousel">
+        <div class="carousel">
+            <img src="images/akdphi-matcha-fundraiser1.png" class="carousel-image active" alt="Photo 1">
+            <img src="images/akdphi-matcha-fundraiser2.png" class="carousel-image" alt="Photo 2">
+            <button class="prev" onclick="changeSlide(-1)">❮</button>
+            <button class="next" onclick="changeSlide(1)">❯</button>
+        </div>
+    </section>
+    <script src="scripts/media-carousel.js"></script>
+</body>
+<footer>
+    <p>&copy; 2025 Kataleena Huynh</p>
+</footer>
+
+</html>

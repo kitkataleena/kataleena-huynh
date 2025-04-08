@@ -1,0 +1,208 @@
+.gidole-regular {
+    font-family: "Gidole", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.merriweather {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* header {
+    background-color: rgba(221, 209, 209, 0.7);
+    color:white;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 8px;
+} */
+
+.compact-header {
+    font-family: "Merriweather", serif;
+    flex-direction: row;
+    display: inline-flex;
+    align-items: center;
+    position: sticky;
+    top: 7px;
+    z-index: 1000;
+    background-color: #7392b7b3;
+    color: white;
+    padding: 0rem 1.5rem 0.3rem;
+    border-radius: 12px;
+    margin: 1rem auto;
+}
+
+.header-pages {
+    text-align: left;
+    padding: 7px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    padding-right: 0.5rem;
+}
+
+.first-name, .last-name {
+    font-weight: 700;
+}
+.last-name {
+    transition: opacity 0.3s ease;
+}
+
+.nav-links {
+    list-style: armenian;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffc107;
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .last-name {
+        display: none;
+    }
+}
+
+html {
+    background-color: #C5D5EA;
+}
+
+p,
+li,
+figcaption,
+h2 {
+    font-family: 'Gidole', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7392b7;
+}
+
+footer {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img.rounded {
+    border-radius: 8px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.row {
+    display: flex; /* For row-based layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    gap: 20px;
+}
+
+.col {
+    flex: 1; /* Allow columns to grow equally */
+    min-width: 250px; /* Ensure columns don't get too narrow */
+}
+
+#about-me-images {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#about-me-images img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.yt iframe {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.media-page h2, p {
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    max-width: 60%;
+    margin: auto;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-image {
+    display: none;
+    width: 100%;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
